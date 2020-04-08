@@ -47,7 +47,7 @@ export function handleStrippedLinkClick(to, e) {
 
   if (isSamePage) {
     e.preventDefault();
-    return scroller(`#${anchor}`, window.gatsby_scroll_offset);
+    return setTimeout(scroller(`#${anchor}`, window.gatsby_scroll_offset), 500);
   }
 
   if (isDifferentPage) {
